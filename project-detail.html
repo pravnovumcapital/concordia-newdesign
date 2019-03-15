@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Concordia 2019 - Project Detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap & Jquery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <!-- Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link href="timeline.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="animate.css" rel="stylesheet" type="text/css" />
+    <link href="magnific-popup.css" rel="stylesheet">
+    <link href="sidemenu.css" rel="stylesheet">
+    <link href="flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="media-queries.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+
+<style>
+			
+			.white-popup {
+			position: relative;
+			background: #fff;
+			width: auto;
+			max-width: 945px;
+			margin: 25px auto;
+			padding: 50px 25px;
+			}
+			
+			#login, #signup {
+			max-width: 360px;
+			padding:30px;
+			text-align: center;
+			}
+			
+			#login .btn, #signup .btn {
+			width: 100%;
+			}
+			
+			#invest {
+			max-width:555px;
+			padding:30px;
+			text-align: center;
+			}
+			
+			.mfp-bg {
+			background: #333;
+			}
+			.mfp-close-btn-in .mfp-close {
+			color: #999999;
+			}
+			.mfp-close {
+			font-size: 36px;
+			}
+
+			
+			
+		</style>
+
+<!-- Add sidemenu -->
+<script>
+(function($){
+	// Menu Functions
+	$(document).ready(function(){
+  	$('#menuToggle').click(function(e){
+    	var $parent = $(this).parent('nav');
+      $parent.toggleClass("open");
+      var navState = $parent.hasClass('open') ? "hide" : "show";
+      $(this).attr("title", navState + " navigation");
+			// Set the timeout to the animation length in the CSS.
+			setTimeout(function(){
+				console.log("timeout set");
+				$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+			}, 200);
+    	e.preventDefault();
+  	});
+  });
+})(jQuery);
+
+          function closeSidebar(e) {
+            var obj = event.target;
+            var $parent = $('nav');
+            $parent.toggleClass("open");
+            var navState = $parent.hasClass('open') ? "hide" : "show";
+            $(obj).attr("title", navState + " navigation");
+            setTimeout(function () {
+              $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+            }, 200);
+          }
+
+   </script>
+
+</head>
+<body>
+  
+<!------------ Navigation start ------------>
+<header>
+  <div class="container"><a href="index.html">
+    <a href="index.html"><div id="logo"><img src="img/logo.png" alt=""></div></a>
+    </a>
+    <ul id="menu">
+      <li><a href="start-a-project.html">Start a Project</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="#login" class="first-popup-link">Login</a> / <a href="#signup" class="second-popup-link">Sign up</a></li>
+    </ul>
+    <nav> 
+      <a href="" id="menuToggle" title="show menu"><span class="navClosed"></span></a> 
+      <div class="login-s">
+				<a href="#login" class="first-popup-link"><i class="fa fa-lock" aria-hidden="true"></i> Login</a>
+			</div>
+			<div class="login-s signup-s">
+				<a href="#signup" class="second-popup-link"><i class="fa fa-user" aria-hidden="true"></i> Sign Up</a>
+			</div>
+      <div style="clear: both;"></div>
+      <a href="start-a-project.html">Start a Project</a>
+      <a href="explore.html">Explore</a>
+    </nav>
+  </div>
+</header>
+<!------------ Navigation end ------------>
+
+<div class="project-title-fixed">
+  <div class="container">
+    <table>
+      <tr valign="top">
+        <td style="width:82px;"><img src="img/project-logo.jpg" alt=""></td>
+        <td style="padding-left:15px;">
+          <h1>Bountie</h1>
+          <h2>An All-in-One Crypto Experience Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h2>
+          <p class="small-font">By Company Here</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!------------ Project detail start ------------>
+<section style="padding-top:130px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-12 v-pad">
+        <div class="project-title">
+          <table>
+            <tr valign="top">
+              <td class="project-logo"><img src="img/project-logo.jpg" alt=""></td>
+              <td style="padding-left:15px;">
+                <h2 class="bold">Bountie</h1>
+                <h3>An All-in-One Crypto Experience Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+                <p class="small-font">By Company Here</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <br><br>
+        <div class="flex-container" style="padding-bottom:100px;">
+          <div class="flexslider">
+            <ul class="slides">
+              <li><img src="img/featured-1.jpg" alt=""></li>
+              <li><img src="img/featured-2.jpg" alt=""></li>
+              <li><img src="img/featured-3.jpg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-token project-token-m">
+          <h3>Token Name: <span class="bold black-text">Title</span></h3>
+          <h3>Token Symbol: <span class="bold black-text">Symbol</span></h3>
+          <h3>Token Platform: <span class="bold black-text">Platform</span></h3>
+          <h3>Token Type: <span class="bold black-text">ERC20</span></h3>
+          <div class="separator"></div>
+          <h3>Accepted Currencies: <span class="bold black-text">USD, ETH</span></h3>
+          <h3>Token ICO Price: <span class="bold black-text">0.80 USD</span></h3>
+          <h3>ICO Supply: <span class="bold black-text">50.000.000.000</span></h3>
+          <h3>Soft Cap: <span class="bold black-text">500.000.000 USD</span></h3>
+          <h3>Hard Cap: <span class="bold black-text">500.000.000 USD</span></h3>
+          <div class="separator"></div>
+          <h3>Token Allocation:</h3>
+          <h3 class="bold black-text">Development - 40%</h3>
+          <h3 class="bold black-text">Marketing - 40%</h3>
+          <h3 class="bold black-text">Others - 20%</h3>
+          <div class="separator"></div>
+          <h3>Use of Funds:</h3>
+          <h3 class="bold black-text">Development - 40%</h3>
+          <h3 class="bold black-text">Marketing - 40%</h3>
+          <h3 class="bold black-text">Others - 20%</h3>
+          <div class="separator"></div>
+          <h3>Presale</h3>
+          <h3>Starts: <span class="bold black-text">1 Mar 2019 (12pm)</span></h3>
+          <h3>Ends: <span class="bold black-text">31 Mar 2019 (11:59am)</span></h3>
+          <div class="separator"></div>
+          <h3>Country: <span class="bold black-text">Singapore</span></h3>
+          <h3>Restricted Countries: <span class="bold black-text">China</span></h3>
+          <br><br>
+          <button class="btn">Participate Now</button>
+          <br><br>
+          <ul class="token-social">
+            <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-discord"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-btc"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-bitcoin"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-reddit-alien"></i></a></li>
+          </ul>
+        </div>
+        <br><br>
+        <p>Description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur eu mi quis ornare. Aliquam tortor diam, lobortis in nunc vel, pellentesque consectetur enim. Mauris ullamcorper sapien vel feugiat blandit. In pretium nunc sit amet dui semper, vel consectetur.</p>
+        <div class="separator"></div>
+        <h4>About the Project</h4>
+        <br><br>
+        <p><a href="" target="_blank" class="blue-text">www.website.com</a></p>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur eu mi quis ornare. Aliquam tortor diam, lobortis in nunc vel, pellentesque consectetur enim. Mauris ullamcorper sapien vel feugiat blandit. In pretium nunc sit amet dui semper, vel consectetur orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur eu mi quis ornare. Aliquam tortor diam.</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur eu mi quis ornare. Aliquam tortor diam, lobortis in nunc vel, pellentesque consectetur enim. Mauris ullamcorper sapien vel feugiat blandit. In pretium nunc sit amet dui semper, vel consectetur orci lobortis in nunc vel, pellentesque consectetur enim. Mauris ullamcorper sapien vel feugiat blandit. In pretium nunc sit amet dui semper</p>
+        <br><br>
+        <img src="img/featured-1.jpg" alt="">
+        <br><br>
+        <p style="text-align:center; font-style:italic;">Video Title Here Lorem Ipsum Dolor Sit</p>
+        <div class="separator"></div>
+        <h4>Materials</h4>
+        <br>
+        <ul class="project-material">
+          <li><a href="" target="_blank" class="btn">Whitepaper</a></li>
+          <li><a href="" target="_blank" class="btn">Lite paper</a></li>
+          <li><a href="" target="_blank" class="btn">Yellow paper</a></li>
+        </ul>
+        <div class="separator"></div>
+        <h4>News</h4>
+        <br>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 v-pad">
+            <img src="img/featured-1.jpg" alt="">
+            <br><br>
+            <h3 class="bold black-text">News Title Here Lorem Ipsum Dolor Sit Amet</h3>
+          </div>
+          <div class="col-lg-4 col-md-4 v-pad">
+            <img src="img/featured-2.jpg" alt="">
+            <br><br>
+            <h3 class="bold black-text">News Title Here Lorem Ipsum Dolor Sit Amet</h3>
+          </div>
+          <div class="col-lg-4 col-md-4 v-pad">
+            <img src="img/featured-3.jpg" alt="">
+            <br><br>
+            <h3 class="bold black-text">News Title Here Lorem Ipsum Dolor Sit Amet</h3>
+          </div>
+        </div>
+        <div class="separator"></div>
+        <h4>Team</h4>
+        <br>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 v-pad">
+            <div class="project-team">
+              <div class="project-team-img" style="background-image:url(img/team-1.jpg);">
+                <a href="" target="_blank"><div class="team-linkedin"><i class="fab fa-linkedin-in"></i></div></a>
+              </div>
+              <h3>Jonathan Lim</h3>
+              <p>CEO</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 v-pad">
+            <div class="project-team">
+              <div class="project-team-img" style="background-image:url(img/team-1.jpg);">
+                <a href="" target="_blank"><div class="team-linkedin"><i class="fab fa-linkedin-in"></i></div></a>
+              </div>
+              <h3>Jonathan Lim</h3>
+              <p>CEO</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 v-pad">
+            <div class="project-team">
+              <div class="project-team-img" style="background-image:url(img/team-1.jpg);">
+                <a href="" target="_blank"><div class="team-linkedin"><i class="fab fa-linkedin-in"></i></div></a>
+              </div>
+              <h3>Jonathan Lim</h3>
+              <p>CEO</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 v-pad">
+            <div class="project-team">
+              <div class="project-team-img" style="background-image:url(img/team-1.jpg);">
+                <a href="" target="_blank"><div class="team-linkedin"><i class="fab fa-linkedin-in"></i></div></a>
+              </div>
+              <h3>Jonathan Lim</h3>
+              <p>CEO</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 v-pad">
+            <div class="project-team">
+              <div class="project-team-img" style="background-image:url(img/team-1.jpg);">
+                <a href="" target="_blank"><div class="team-linkedin"><i class="fab fa-linkedin-in"></i></div></a>
+              </div>
+              <h3>Jonathan Lim</h3>
+              <p>CEO</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 v-pad">
+            <div class="project-team">
+              <div class="project-team-img" style="background-image:url(img/team-1.jpg);">
+                <a href="" target="_blank"><div class="team-linkedin"><i class="fab fa-linkedin-in"></i></div></a>
+              </div>
+              <h3>Jonathan Lim</h3>
+              <p>CEO</p>
+            </div>
+          </div>
+        </div>
+        <div class="separator"></div>
+        <h4>Milestones</h4>
+        <br><br><br>
+        <div class="example-centered">
+          <div class="col-12  col-lg-12">
+            <ul class="timeline timeline-centered">
+              <li class="timeline-item">
+                <div class="timeline-info"> </div>
+                <div class="timeline-marker">1</div>
+                <div class="timeline-content">
+                  <div class="timeline-content-r">
+                    <h3 class="timeline-title bold black-text">2019 Q1 - Q2</h3>
+                    <p>Market research;</p>
+                    <p>Prototype design;</p>
+                    <p>Preparations for license.</p>
+                  </div>
+                </div>
+              </li> 
+              <li class="timeline-item">
+                <div class="timeline-info"> </div>
+                <div class="timeline-marker">2</div>
+                <div class="timeline-content">
+                  <div class="timeline-content-r">
+                    <h3 class="timeline-title bold black-text">2019 Q3 - Q4</h3>
+                    <p>Angel funding;</p>
+                    <p>Brand registration;</p>
+                    <p>White paper.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-info"> </div>
+                <div class="timeline-marker">3</div>
+                <div class="timeline-content">
+                  <div class="timeline-content-r">
+                    <h3 class="timeline-title bold black-text">2020 Q1 - Q2</h3>
+                    <p>New website;</p>
+                    <p>Cross-chain design;</p>
+                    <p>Game protocol design;</p>
+                    <p>framework design</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-info"></div>
+                <div class="timeline-marker">4</div>
+                <div class="timeline-content">
+                  <div class="timeline-content-r">
+                    <h3 class="timeline-title bold black-text">2020 Q3 - Q4</h3>
+                    <p>Blockchain layer development;</p>
+                    <p>Wallet development;</p>
+                    <p>Games testing.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </div>
+      </div>
+      <div class="col-lg-4 col-md-12 v-pad project-sticky">
+        <div class="project-token sticky">
+          <h3>Token Name: <span class="bold black-text">Title</span></h3>
+          <h3>Token Symbol: <span class="bold black-text">Symbol</span></h3>
+          <h3>Token Platform: <span class="bold black-text">Platform</span></h3>
+          <h3>Token Type: <span class="bold black-text">ERC20</span></h3>
+          <div class="separator"></div>
+          <h3>Accepted Currencies: <span class="bold black-text">USD, ETH</span></h3>
+          <h3>Token ICO Price: <span class="bold black-text">0.80 USD</span></h3>
+          <h3>ICO Supply: <span class="bold black-text">50.000.000.000</span></h3>
+          <h3>Soft Cap: <span class="bold black-text">500.000.000 USD</span></h3>
+          <h3>Hard Cap: <span class="bold black-text">500.000.000 USD</span></h3>
+          <div class="separator"></div>
+          <h3>Token Allocation:</h3>
+          <h3 class="bold black-text">Development - 40%</h3>
+          <h3 class="bold black-text">Marketing - 40%</h3>
+          <h3 class="bold black-text">Others - 20%</h3>
+          <div class="separator"></div>
+          <h3>Use of Funds:</h3>
+          <h3 class="bold black-text">Development - 40%</h3>
+          <h3 class="bold black-text">Marketing - 40%</h3>
+          <h3 class="bold black-text">Others - 20%</h3>
+          <div class="separator"></div>
+          <h3>Presale</h3>
+          <h3>Starts: <span class="bold black-text">1 Mar 2019 (12pm)</span></h3>
+          <h3>Ends: <span class="bold black-text">31 Mar 2019 (11:59am)</span></h3>
+          <div class="separator"></div>
+          <h3>Country: <span class="bold black-text">Singapore</span></h3>
+          <h3>Restricted Countries: <span class="bold black-text">China</span></h3>
+          <br><br>
+          <button class="btn">Participate Now</button>
+          <br><br>
+          <ul class="token-social">
+            <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-discord"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-btc"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-bitcoin"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-reddit-alien"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ Project detail end ------------>
+
+
+<!------------ Footer start ------------>
+<footer>
+  <div class="container">
+    <ul class="footer-menu">
+      <li><a href="about.html">About us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="privacy-policy.html">Privacy Polic</a>y</li>
+      <li><a href="terms.html">Terms of use</a></li>
+    </ul>
+    <div class="copyright">Concordia © 2019. All Rights Reserved.</div>
+    <div style="clear:both"></div>
+  </div>
+</footer>
+<!------------ Footer end ------------>
+
+<!---------- Popup content ------------> 
+<div id="" class="white-popup mfp-hide sans">
+
+</div>
+<!----------Popup content end ------------> 
+
+<!------------ Login & signup popup ------------>
+<div id="login" class="white-popup mfp-hide sans">
+    <h3 class="bold">Login</h3>
+    <br><br>
+    <a href="" class="btn facebook-btn small-btn"><i class="fab fa-facebook-f"></i> &nbsp;&nbsp;Log in with Facebook</a>
+    <br><br>
+    <a href="" class="btn google-btn small-btn"><i class="fab fa-google"></i> &nbsp;&nbsp;Log in with Google</a>
+    <br><br><br>
+    <p class="small-font">Or sign in with email</p>
+    <br><br>
+    <input type="text" class="input-style" placeholder="john.doe@email.com ">
+    <br><br>
+    <input type="text" class="input-style" placeholder="Password ">
+    <br><br>
+    <div style="float:left;"><input type="checkbox"> &nbsp;&nbsp;<span class="small-font">Remember me</span></div>
+    <div style="float: right; margin-top: 2px;"><a href=""><span class="small-font" style="color:#24abd8;">Forgot your password?</span></a></div>
+    <div style="clear: both;"></div>
+    <br><br>
+    <a href="my-account.html" class="btn small-btn">Log In</a>
+    <br><br>
+    <p class="small-font">Don’t have an account? <a href="#signup" style="color:#24abd8;" class="second-popup-link">Sign up</a></p>
+  </div>
+  
+  <div id="signup" class="white-popup mfp-hide sans">		
+    <h3 class="bold">Sign Up</h3>
+    <br><br>
+    <a href="" class="btn facebook-btn small-btn"><i class="fab fa-facebook-f"></i> &nbsp;&nbsp;Log in with Facebook</a>
+    <br><br>
+    <a href="" class="btn google-btn small-btn"><i class="fab fa-google"></i> &nbsp;&nbsp;Log in with Google</a>
+    <br><br><br>
+    <p>Or sign up with email</p>
+    <br><br>
+    <input type="text" class="input-style" placeholder="Name ">
+    <br><br>
+    <input type="text" class="input-style" placeholder="Your Email ">
+    <br><br>
+    <input type="text" class="input-style" placeholder="Password ">
+    <br><br>
+    <table>
+      <tbody>
+        <tr valign="top">
+          <td style="width:25px;"><input type="checkbox" value="value1" oninput="this.className = ''"></td>
+          <td><p class="small-font" style="text-align: left;">I would like to receive latest news & updates</p></td>
+        </tr>
+        <tr valign="top">
+          <td style="width:25px;"><input type="checkbox" value="value2" oninput="this.className = ''"></td>
+          <td><p class="small-font" style="text-align: left;">I have read and agree with the <a href="terms.html" target="_blank" style="color:#24abd8">Terms & Conditions</a> and <a href="privacy.html" target="_blank" style="color:#24abd8">Privacy Policy</a></p></td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+    <a href="my-account.html" class="btn small-btn">Sign Up</a>
+    <br><br>
+    <p class="small-font">Already have an account? <a href="#login" style="color:#24abd8;" class="first-popup-link">Sign in</a></p>
+  </div>
+  <!------------ Login & signup end ------------>
+
+
+<!------------ Add sticky js ------------>
+<script type="text/javascript" src="js/jquery.jsticky.js"></script>
+<script type="text/javascript">
+        $(function(){
+            $(".sticky").sticky({
+                topSpacing: 185,
+                zIndex:2,
+                stopper: "footer"
+            });
+        });
+</script>
+
+
+<!-- Apply class change on window scroll --> 
+<script>
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $("header")[addRemClass]('bgChange');
+});
+
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $(".project-title")[addRemClass]('bgChange');
+});
+
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $(".project-title-fixed")[addRemClass]('bgChange');
+});
+</script>    
+
+<!-- Add flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.flexslider').flexslider({
+            animation: 'slide',
+            controlsContainer: '.flexslider',
+			slideshowSpeed: 3500
+        });
+    });
+	
+</script>
+
+<!-- Add magnifique popup --> 
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- Add magnifique popup --> 
+		
+<script>
+    $(document).ready(function () {				
+      $('.open-popup-link').magnificPopup({
+        type:'inline',
+        midClick: true,
+        mainClass: 'mfp-fade' // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+        
+      });
+      
+      
+      // Show loading animation				
+      $('.submit-btn').each(function() {
+        $(this).on('click', function(e) {
+          e.preventDefault();
+          
+          var loadingDiv = $('.loading');
+          loadingDiv.show();
+          
+          setTimeout(function() { 
+            loadingDiv.hide();
+          }, 5000);
+          
+        });
+      });	
+    });
+  </script>
+  
+  <script>
+    $('.first-popup-link, .second-popup-link').magnificPopup({
+      closeBtnInside:true
+    });	
+  </script>
+
+<!-- Animate element -->
+<script src="js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+
+<script>
+(function(d){d.each(["backgroundColor","borderBottomColor","borderLeftColor","borderRightColor","borderTopColor","color","outlineColor"],function(f,e){d.fx.step[e]=function(g){if(!g.colorInit){g.start=c(g.elem,e);g.end=b(g.end);g.colorInit=true}g.elem.style[e]="rgb("+[Math.max(Math.min(parseInt((g.pos*(g.end[0]-g.start[0]))+g.start[0]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[1]-g.start[1]))+g.start[1]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[2]-g.start[2]))+g.start[2]),255),0)].join(",")+")"}});function b(f){var e;if(f&&f.constructor==Array&&f.length==3){return f}if(e=/rgb\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*\)/.exec(f)){return[parseInt(e[1]),parseInt(e[2]),parseInt(e[3])]}if(e=/rgb\(\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*\)/.exec(f)){return[parseFloat(e[1])*2.55,parseFloat(e[2])*2.55,parseFloat(e[3])*2.55]}if(e=/#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/.exec(f)){return[parseInt(e[1],16),parseInt(e[2],16),parseInt(e[3],16)]}if(e=/#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/.exec(f)){return[parseInt(e[1]+e[1],16),parseInt(e[2]+e[2],16),parseInt(e[3]+e[3],16)]}if(e=/rgba\(0, 0, 0, 0\)/.exec(f)){return a.transparent}return a[d.trim(f).toLowerCase()]}function c(g,e){var f;do{f=d.css(g,e);if(f!=""&&f!="transparent"||d.nodeName(g,"body")){break}e="backgroundColor"}while(g=g.parentNode);return b(f)}var a={aqua:[0,255,255],azure:[240,255,255],beige:[245,245,220],black:[0,0,0],blue:[0,0,255],brown:[165,42,42],cyan:[0,255,255],darkblue:[0,0,139],darkcyan:[0,139,139],darkgrey:[169,169,169],darkgreen:[0,100,0],darkkhaki:[189,183,107],darkmagenta:[139,0,139],darkolivegreen:[85,107,47],darkorange:[255,140,0],darkorchid:[153,50,204],darkred:[139,0,0],darksalmon:[233,150,122],darkviolet:[148,0,211],fuchsia:[255,0,255],gold:[255,215,0],green:[0,128,0],indigo:[75,0,130],khaki:[240,230,140],lightblue:[173,216,230],lightcyan:[224,255,255],lightgreen:[144,238,144],lightgrey:[211,211,211],lightpink:[255,182,193],lightyellow:[255,255,224],lime:[0,255,0],magenta:[255,0,255],maroon:[128,0,0],navy:[0,0,128],olive:[128,128,0],orange:[255,165,0],pink:[255,192,203],purple:[128,0,128],violet:[128,0,128],red:[255,0,0],silver:[192,192,192],white:[255,255,255],yellow:[255,255,0],transparent:[255,255,255]}})(jQuery);
+</script>
+
+</body>
+</html>

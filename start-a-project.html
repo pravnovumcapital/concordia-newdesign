@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Concordia 2019 - Start a Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap & Jquery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <!-- Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link href="timeline.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="animate.css" rel="stylesheet" type="text/css" />
+    <link href="magnific-popup.css" rel="stylesheet">
+    <link href="sidemenu.css" rel="stylesheet">
+    <link href="flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="media-queries.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+
+<style>
+			
+			.white-popup {
+			position: relative;
+			background: #fff;
+			width: auto;
+			max-width: 945px;
+			margin: 25px auto;
+			padding: 50px 25px;
+			}
+			
+			#login, #signup {
+			max-width: 360px;
+			padding:30px;
+			text-align: center;
+			}
+			
+			#login .btn, #signup .btn {
+			width: 100%;
+			}
+			
+			#invest {
+			max-width:555px;
+			padding:30px;
+			text-align: center;
+			}
+			
+			.mfp-bg {
+			background: #333;
+			}
+			.mfp-close-btn-in .mfp-close {
+			color: #999999;
+			}
+			.mfp-close {
+			font-size: 36px;
+			}
+
+			
+			
+		</style>
+
+<!-- Add sidemenu -->
+<script>
+(function($){
+	// Menu Functions
+	$(document).ready(function(){
+  	$('#menuToggle').click(function(e){
+    	var $parent = $(this).parent('nav');
+      $parent.toggleClass("open");
+      var navState = $parent.hasClass('open') ? "hide" : "show";
+      $(this).attr("title", navState + " navigation");
+			// Set the timeout to the animation length in the CSS.
+			setTimeout(function(){
+				console.log("timeout set");
+				$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+			}, 200);
+    	e.preventDefault();
+  	});
+  });
+})(jQuery);
+
+          function closeSidebar(e) {
+            var obj = event.target;
+            var $parent = $('nav');
+            $parent.toggleClass("open");
+            var navState = $parent.hasClass('open') ? "hide" : "show";
+            $(obj).attr("title", navState + " navigation");
+            setTimeout(function () {
+              $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+            }, 200);
+          }
+
+   </script>
+
+</head>
+<body>
+  
+<!------------ Navigation start ------------>
+<header>
+  <div class="container"><a href="index.html">
+    <a href="index.html"><div id="logo"><img src="img/logo.png" alt=""></div></a>
+    </a>
+    <ul id="menu">
+      <li><a href="start-a-project.html">Start a Project</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="#login" class="first-popup-link">Login</a> / <a href="#signup" class="second-popup-link">Sign up</a></li>
+    </ul>
+    <nav> 
+      <a href="" id="menuToggle" title="show menu"><span class="navClosed"></span></a> 
+      <div class="login-s">
+				<a href="#login" class="first-popup-link"><i class="fa fa-lock" aria-hidden="true"></i> Login</a>
+			</div>
+			<div class="login-s signup-s">
+				<a href="#signup" class="second-popup-link"><i class="fa fa-user" aria-hidden="true"></i> Sign Up</a>
+			</div>
+      <div style="clear: both;"></div>
+      <a href="start-a-project.html">Start a Project</a>
+      <a href="explore.html">Explore</a>
+    </nav>
+  </div>
+</header>
+<!------------ Navigation end ------------>
+
+<!------------ Start a Project start ------------>
+<section style="padding-top:130px;">
+  <div class="container">
+    <h1 style="text-align:center;">Start a Tokensale</h1>
+    <div class="step-container">
+      <div class="step-line step-line-s"></div>
+      <div class="step">1</div>
+      <div class="step-line"></div>
+      <div class="step">2</div>
+      <div class="step-line"></div>
+      <div class="step">3</div>
+      <div class="step-line"></div>
+      <div class="step">4</div>
+      <div class="step-line step-line-s"></div>
+      <div style="clear:both;"></div>
+    </div>
+    <div class="step-title"><h4>About the Project</h4></div>
+    <div class="step-title step-title-2"><h4>Token Details</h4></div>
+    <div class="step-title step-title-3"><h4>Token Sale Details</h4></div>
+    <div class="step-title step-title-4"><h4>About the Team</h4></div>
+    <div style="clear:both;"></div>
+    <br><br><br><br>
+
+    <!------------ Register form start ------------>
+    <div id="regForm">
+      <!------------ 1st tab start ------------>
+      <div class="tab">
+        <div class="tab-content">
+          <div class="tab-section">
+            <div class="regform-row">
+              <div class="regform-title"><p>Project Title</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Token Name</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Token Symbol</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Project Logo</p></div>
+              <div class="regform-input">
+                <div id="hide">
+                  <label class="btn small-btn">
+                    <input type="file"/>Upload &nbsp;<i class="fa fa-plus" aria-hidden="true"></i>
+                  </label>
+                </div> 
+                <p class="small-font italic lightgrey-text">.JPG / .PNG, Recommended size: min.350x350px (Square)</p>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Short Description</p></div>
+              <div class="regform-input"><textarea class="input-style wordlimit" id="comment_body" name="body" style="height:70px;" placeholder="One-liner that best describes your project. Up to 14 words." onkeyup="checkWordLen(this);"></textarea></div>
+              <div style="clear: both;"></div>
+              <br>
+              <span id="charlimit"><div class="words-left">14 words left</div></span>
+            </div>
+            <br>
+            <div class="regform-row">
+              <div class="regform-title"><p>Description</p></div>
+              <div class="regform-input"><textarea class="input-style wordlimit" style="height:220px;" id="comment_body2" placeholder="Describe your project in up to 150 words."></textarea></div>
+              <div style="clear: both;"></div>
+              <br>
+              <span id="charlimit"><div class="words-left2">150 words left</div></span>
+            </div>
+            <br>
+            <div class="regform-row">
+              <div class="regform-title"><p>Website</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Featured Image</p></div>
+              <div class="regform-input">
+                <div id="hide">
+                  <label class="btn small-btn">
+                    <input type="file"/>Upload &nbsp;<i class="fa fa-plus" aria-hidden="true"></i>
+                  </label>
+                </div> 
+                <p class="small-font italic lightgrey-text">.JPG / .PNG, Recommended size: 750x500px (3:2)</p>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Additional Images</p></div>
+              <div class="regform-input">
+                <div id="hide">
+                  <label class="btn small-btn">
+                    <input type="file" multiple>Upload &nbsp;<i class="fa fa-plus" aria-hidden="true"></i>
+                  </label>
+                </div> 
+                <p class="small-font italic lightgrey-text">.JPG / .PNG, Recommended size: 750x500px (3:2)</p>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Country</p></div>
+              <div class="regform-input">
+                <select class="input-style">
+                    <option value="AF">Select</option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AX">Åland Islands</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="AD">Andorra</option>
+                    <option value="AO">Angola</option>
+                    <option value="AI">Anguilla</option>
+                    <option value="AQ">Antarctica</option>
+                    <option value="AG">Antigua and Barbuda</option>
+                    <option value="AR">Argentina</option>
+                    <option value="AM">Armenia</option>
+                    <option value="AW">Aruba</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaijan</option>
+                    <option value="BS">Bahamas</option>
+                    <option value="BH">Bahrain</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="BB">Barbados</option>
+                    <option value="BY">Belarus</option>
+                    <option value="BE">Belgium</option>
+                    <option value="BZ">Belize</option>
+                    <option value="BJ">Benin</option>
+                    <option value="BM">Bermuda</option>
+                    <option value="BT">Bhutan</option>
+                    <option value="BO">Bolivia, Plurinational State of</option>
+                    <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                    <option value="BA">Bosnia and Herzegovina</option>
+                    <option value="BW">Botswana</option>
+                    <option value="BV">Bouvet Island</option>
+                    <option value="BR">Brazil</option>
+                    <option value="IO">British Indian Ocean Territory</option>
+                    <option value="BN">Brunei Darussalam</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="BF">Burkina Faso</option>
+                    <option value="BI">Burundi</option>
+                    <option value="KH">Cambodia</option>
+                    <option value="CM">Cameroon</option>
+                    <option value="CA">Canada</option>
+                    <option value="CV">Cape Verde</option>
+                    <option value="KY">Cayman Islands</option>
+                    <option value="CF">Central African Republic</option>
+                    <option value="TD">Chad</option>
+                    <option value="CL">Chile</option>
+                    <option value="CN">China</option>
+                    <option value="CX">Christmas Island</option>
+                    <option value="CC">Cocos (Keeling) Islands</option>
+                    <option value="CO">Colombia</option>
+                    <option value="KM">Comoros</option>
+                    <option value="CG">Congo</option>
+                    <option value="CD">Congo, the Democratic Republic of the</option>
+                    <option value="CK">Cook Islands</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CI">Côte d'Ivoire</option>
+                    <option value="HR">Croatia</option>
+                    <option value="CU">Cuba</option>
+                    <option value="CW">Curaçao</option>
+                    <option value="CY">Cyprus</option>
+                    <option value="CZ">Czech Republic</option>
+                    <option value="DK">Denmark</option>
+                    <option value="DJ">Djibouti</option>
+                    <option value="DM">Dominica</option>
+                    <option value="DO">Dominican Republic</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="EG">Egypt</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="GQ">Equatorial Guinea</option>
+                    <option value="ER">Eritrea</option>
+                    <option value="EE">Estonia</option>
+                    <option value="ET">Ethiopia</option>
+                    <option value="FK">Falkland Islands (Malvinas)</option>
+                    <option value="FO">Faroe Islands</option>
+                    <option value="FJ">Fiji</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+                    <option value="GF">French Guiana</option>
+                    <option value="PF">French Polynesia</option>
+                    <option value="TF">French Southern Territories</option>
+                    <option value="GA">Gabon</option>
+                    <option value="GM">Gambia</option>
+                    <option value="GE">Georgia</option>
+                    <option value="DE">Germany</option>
+                    <option value="GH">Ghana</option>
+                    <option value="GI">Gibraltar</option>
+                    <option value="GR">Greece</option>
+                    <option value="GL">Greenland</option>
+                    <option value="GD">Grenada</option>
+                    <option value="GP">Guadeloupe</option>
+                    <option value="GU">Guam</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="GG">Guernsey</option>
+                    <option value="GN">Guinea</option>
+                    <option value="GW">Guinea-Bissau</option>
+                    <option value="GY">Guyana</option>
+                    <option value="HT">Haiti</option>
+                    <option value="HM">Heard Island and McDonald Islands</option>
+                    <option value="VA">Holy See (Vatican City State)</option>
+                    <option value="HN">Honduras</option>
+                    <option value="HK">Hong Kong</option>
+                    <option value="HU">Hungary</option>
+                    <option value="IS">Iceland</option>
+                    <option value="IN">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IR">Iran, Islamic Republic of</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="IE">Ireland</option>
+                    <option value="IM">Isle of Man</option>
+                    <option value="IL">Israel</option>
+                    <option value="IT">Italy</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="JP">Japan</option>
+                    <option value="JE">Jersey</option>
+                    <option value="JO">Jordan</option>
+                    <option value="KZ">Kazakhstan</option>
+                    <option value="KE">Kenya</option>
+                    <option value="KI">Kiribati</option>
+                    <option value="KP">Korea, Democratic People's Republic of</option>
+                    <option value="KR">Korea, Republic of</option>
+                    <option value="KW">Kuwait</option>
+                    <option value="KG">Kyrgyzstan</option>
+                    <option value="LA">Lao People's Democratic Republic</option>
+                    <option value="LV">Latvia</option>
+                    <option value="LB">Lebanon</option>
+                    <option value="LS">Lesotho</option>
+                    <option value="LR">Liberia</option>
+                    <option value="LY">Libya</option>
+                    <option value="LI">Liechtenstein</option>
+                    <option value="LT">Lithuania</option>
+                    <option value="LU">Luxembourg</option>
+                    <option value="MO">Macao</option>
+                    <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                    <option value="MG">Madagascar</option>
+                    <option value="MW">Malawi</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="MV">Maldives</option>
+                    <option value="ML">Mali</option>
+                    <option value="MT">Malta</option>
+                    <option value="MH">Marshall Islands</option>
+                    <option value="MQ">Martinique</option>
+                    <option value="MR">Mauritania</option>
+                    <option value="MU">Mauritius</option>
+                    <option value="YT">Mayotte</option>
+                    <option value="MX">Mexico</option>
+                    <option value="FM">Micronesia, Federated States of</option>
+                    <option value="MD">Moldova, Republic of</option>
+                    <option value="MC">Monaco</option>
+                    <option value="MN">Mongolia</option>
+                    <option value="ME">Montenegro</option>
+                    <option value="MS">Montserrat</option>
+                    <option value="MA">Morocco</option>
+                    <option value="MZ">Mozambique</option>
+                    <option value="MM">Myanmar</option>
+                    <option value="NA">Namibia</option>
+                    <option value="NR">Nauru</option>
+                    <option value="NP">Nepal</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="NC">New Caledonia</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="NE">Niger</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="NU">Niue</option>
+                    <option value="NF">Norfolk Island</option>
+                    <option value="MP">Northern Mariana Islands</option>
+                    <option value="NO">Norway</option>
+                    <option value="OM">Oman</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PW">Palau</option>
+                    <option value="PS">Palestinian Territory, Occupied</option>
+                    <option value="PA">Panama</option>
+                    <option value="PG">Papua New Guinea</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Peru</option>
+                    <option value="PH">Philippines</option>
+                    <option value="PN">Pitcairn</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="QA">Qatar</option>
+                    <option value="RE">Réunion</option>
+                    <option value="RO">Romania</option>
+                    <option value="RU">Russian Federation</option>
+                    <option value="RW">Rwanda</option>
+                    <option value="BL">Saint Barthélemy</option>
+                    <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                    <option value="KN">Saint Kitts and Nevis</option>
+                    <option value="LC">Saint Lucia</option>
+                    <option value="MF">Saint Martin (French part)</option>
+                    <option value="PM">Saint Pierre and Miquelon</option>
+                    <option value="VC">Saint Vincent and the Grenadines</option>
+                    <option value="WS">Samoa</option>
+                    <option value="SM">San Marino</option>
+                    <option value="ST">Sao Tome and Principe</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="SN">Senegal</option>
+                    <option value="RS">Serbia</option>
+                    <option value="SC">Seychelles</option>
+                    <option value="SL">Sierra Leone</option>
+                    <option value="SG">Singapore</option>
+                    <option value="SX">Sint Maarten (Dutch part)</option>
+                    <option value="SK">Slovakia</option>
+                    <option value="SI">Slovenia</option>
+                    <option value="SB">Solomon Islands</option>
+                    <option value="SO">Somalia</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="GS">South Georgia and the South Sandwich Islands</option>
+                    <option value="SS">South Sudan</option>
+                    <option value="ES">Spain</option>
+                    <option value="LK">Sri Lanka</option>
+                    <option value="SD">Sudan</option>
+                    <option value="SR">Suriname</option>
+                    <option value="SJ">Svalbard and Jan Mayen</option>
+                    <option value="SZ">Swaziland</option>
+                    <option value="SE">Sweden</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="SY">Syrian Arab Republic</option>
+                    <option value="TW">Taiwan, Province of China</option>
+                    <option value="TJ">Tajikistan</option>
+                    <option value="TZ">Tanzania, United Republic of</option>
+                    <option value="TH">Thailand</option>
+                    <option value="TL">Timor-Leste</option>
+                    <option value="TG">Togo</option>
+                    <option value="TK">Tokelau</option>
+                    <option value="TO">Tonga</option>
+                    <option value="TT">Trinidad and Tobago</option>
+                    <option value="TN">Tunisia</option>
+                    <option value="TR">Turkey</option>
+                    <option value="TM">Turkmenistan</option>
+                    <option value="TC">Turks and Caicos Islands</option>
+                    <option value="TV">Tuvalu</option>
+                    <option value="UG">Uganda</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="US">United States</option>
+                    <option value="UM">United States Minor Outlying Islands</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="UZ">Uzbekistan</option>
+                    <option value="VU">Vanuatu</option>
+                    <option value="VE">Venezuela, Bolivarian Republic of</option>
+                    <option value="VN">Viet Nam</option>
+                    <option value="VG">Virgin Islands, British</option>
+                    <option value="VI">Virgin Islands, U.S.</option>
+                    <option value="WF">Wallis and Futuna</option>
+                    <option value="EH">Western Sahara</option>
+                    <option value="YE">Yemen</option>
+                    <option value="ZM">Zambia</option>
+                    <option value="ZW">Zimbabwe</option>
+                </select>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="separator"></div>
+            <p class="bold sec-title">UPLOAD</p>
+            <br>
+            <div class="regform-row">
+              <div class="regform-title"><p>Whitepaper</p></div>
+              <div class="regform-input">
+                <div id="hide">
+                  <label class="btn small-btn">
+                    <input type="file"/>Upload &nbsp;<i class="fa fa-plus" aria-hidden="true"></i>
+                  </label>
+                </div> 
+                <p class="small-font italic lightgrey-text">.PDF, Max. 15mb</p>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Litepaper</p></div>
+              <div class="regform-input">
+                <div id="hide">
+                  <label class="btn small-btn">
+                    <input type="file"/>Upload &nbsp;<i class="fa fa-plus" aria-hidden="true"></i>
+                  </label>
+                </div> 
+                <p class="small-font italic lightgrey-text">.PDF, Max. 15mb</p>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Yellow paper</p></div>
+              <div class="regform-input">
+                <div id="hide">
+                  <label class="btn small-btn">
+                    <input type="file"/>Upload &nbsp;<i class="fa fa-plus" aria-hidden="true"></i>
+                  </label>
+                </div> 
+                <p class="small-font italic lightgrey-text">.PDF, Max. 15mb</p>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="separator"></div>
+            <p class="bold sec-title">MEDIA</p>
+            <br>
+            <div class="regform-row">
+              <div class="regform-title"><p>Video Title</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Link to Video</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div id="media"></div>
+            <div style="text-align: right;"><button onClick="addMedia()" class="btn grey-btn small-btn"> Add &nbsp;<i class="fa fa-plus" aria-hidden="true"></i></button></div>
+            <div class="separator"></div>
+            <p class="bold sec-title">PRESS RELEASE</p>
+            <br>
+            <div class="regform-row">
+              <div class="regform-title"><p>Link to Article</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div id="press"></div>
+            <div style="text-align: right;"><button onClick="addPress()" class="btn grey-btn small-btn"> Add &nbsp;<i class="fa fa-plus" aria-hidden="true"></i></button></div>
+            <div class="separator"></div>
+            <p class="bold sec-title">SOCIAL MEDIA</p>
+            <br>
+            <div class="regform-row">
+              <div class="social-media">
+                <div class="social-icon"><p><i class="fab fa-facebook-f"></i> &nbsp;&nbsp;&nbsp;<span class="social-platform">Facebook</span></p></div>
+              </div>
+              <div class="social-url"><p>www.facebook.com/</p></div>
+              <div class="social-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="social-media">
+                <div class="social-icon"><p><i class="fab fa-telegram-plane"></i> &nbsp;&nbsp;&nbsp;<span class="social-platform">Telegram</span></p></div>
+              </div>
+              <div class="social-url"><p>www.t.me/</p></div>
+              <div class="social-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="social-media">
+                <div class="social-icon"><p><i class="fab fa-linkedin-in"></i> &nbsp;&nbsp;&nbsp;<span class="social-platform">LinkedIn</span></p></div>
+              </div>
+              <div class="social-url"><p>www.linkedin.com/in/</p></div>
+              <div class="social-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="social-media">
+                <div class="social-icon"><p><i class="fab fa-medium-m"></i> &nbsp;&nbsp;&nbsp;<span class="social-platform">Medium</span></p></div>
+              </div>
+              <div class="social-url"><p>www.medium.com/</p></div>
+              <div class="social-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="social-media">
+                <div class="social-icon"><p><i class="fab fa-github-alt"></i> &nbsp;&nbsp;&nbsp;<span class="social-platform">Github</span></p></div>
+              </div>
+              <div class="social-url"><p>www.github.com/</p></div>
+              <div class="social-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="social-media">
+                <div class="social-icon"><p><i class="fab fa-discord"></i> &nbsp;&nbsp;&nbsp;<span class="social-platform">Discord</span></p></div>
+              </div>
+              <div class="social-url"><p>www.discord.com/</p></div>
+              <div class="social-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="social-media">
+                <div class="social-icon"><p><i class="fab fa-btc"></i> &nbsp;&nbsp;&nbsp;<span class="social-platform">Bitcointalk</span></p></div>
+              </div>
+              <div class="social-url"><p>www.bitcointalk.org/</p></div>
+              <div class="social-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="social-media">
+                <div class="social-icon"><p><i class="fab fa-bitcoin"></i> &nbsp;&nbsp;&nbsp;<span class="social-platform">Bitcoinwiki</span></p></div>
+              </div>
+              <div class="social-url"><p>www.bitcoinwiki.org/</p></div>
+              <div class="social-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="social-media">
+                <div class="social-icon"><p><i class="fab fa-reddit-alien"></i> &nbsp;&nbsp;&nbsp;<span class="social-platform">Reddit</span></p></div>
+              </div>
+              <div class="social-url"><p>www.reddit.com/</p></div>
+              <div class="social-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="separator"></div>
+            <p class="bold sec-title">ROADMAP</p>
+            <br>
+            <div class="regform-row">
+              <div class="regform-title"><p>Date</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Milestone</p></div>
+              <div class="regform-input"><textarea class="input-style" style="height:70px;"></textarea></div>
+              <div style="clear: both;"></div>
+            </div>
+            <br>
+            <div class="regform-row">
+              <div class="regform-title"><p>Date</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Milestone</p></div>
+              <div class="regform-input"><textarea class="input-style" style="height:70px;"></textarea></div>
+              <div style="clear: both;"></div>
+            </div>
+            <br>
+            <div class="regform-row">
+              <div class="regform-title"><p>Date</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Milestone</p></div>
+              <div class="regform-input"><textarea class="input-style" style="height:70px;"></textarea></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div id="roadmap"></div>
+            <div style="text-align: right;"><button onClick="addRoadmap()" class="btn grey-btn small-btn"> Add &nbsp;<i class="fa fa-plus" aria-hidden="true"></i></button></div>
+          </div>
+        </div>
+        <br><br>
+        <div style="overflow:auto;">
+          <div style="text-align:center;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" style="width:100%;" id="nextBtn" class="btn" onclick="nextPrev(1)">Next : Token Details</button>
+          </div>
+        </div>
+      </div>
+      <!------------ 1st tab end ------------>
+      <!------------ 2nd tab start ------------>
+      <div class="tab">
+        <div class="tab-content">
+          <div class="tab-section">
+            <div class="regform-row">
+              <div class="regform-title"><p>Total Supply</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>ICO Supply</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Token Platform</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Token Type</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Token ICO Price</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Base Currency</p></div>
+              <div class="regform-input">
+                <select class="input-style">
+                  <option>Select</option>
+                  <option>USD</option>
+                  <option>BTC</option>
+                  <option>Others</option>
+                </select>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+            <br><br>
+            <p class="bold sec-title">Token Allocation</p>
+            <br>
+            <div class="regform-row">
+              <div class="regform-title"><p>Allocated to</p></div>
+              <div class="regform-input"><input type="text" class="input-style" placeholder="Eg. Team, Reserves..."></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>% allocated</p></div>
+              <div class="regform-input"><input type="text" class="input-style percentage-input"> &nbsp;&nbsp;&nbsp;%</div>
+              <div style="clear: both;"></div>
+            </div>
+            <div id="allocation"></div>
+            <div style="text-align: right;"><button onClick="addAllocation()" class="btn grey-btn small-btn"> Add &nbsp;<i class="fa fa-plus" aria-hidden="true"></i></button></div>
+            <br><br>
+            <p class="bold sec-title">Use of Funds</p>
+            <br>
+            <div class="regform-row">
+              <div class="regform-title"><p>Purpose</p></div>
+              <div class="regform-input"><input type="text" class="input-style" placeholder="Eg. Team, Reserves..."></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>% of funds</p></div>
+              <div class="regform-input"><input type="text" class="input-style percentage-input"> &nbsp;&nbsp;&nbsp;%</div>
+              <div style="clear: both;"></div>
+            </div>
+            <div id="funds"></div>
+            <div style="text-align: right;"><button onClick="addFunds()" class="btn grey-btn small-btn"> Add &nbsp;<i class="fa fa-plus" aria-hidden="true"></i></button></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12 v-pad">
+            <button type="button" style="width:100%;" id="prevBtn" onclick="nextPrev(-1)" class="btn black-btn">Previous : About the Project</button>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12 v-pad">
+            <button type="button" style="width:100%;" id="nextBtn" class="btn" onclick="nextPrev(1)">Next : Token Sale Details</button>
+          </div>
+        </div>
+      </div>
+      <!------------ 2nd tab end ------------>
+      <!------------ 3rd tab start ------------>
+      <div class="tab">
+        <div class="tab-content">
+          <div class="tab-section">
+            <div class="regform-row">
+              <div class="regform-title"><p>Restricted Countries</p></div>
+              <div class="regform-input">
+                <select class="input-style">
+                  <option>Select</option>
+                  <option>United States of America</option>
+                  <option>China</option>
+                </select>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Accepted Currencies</p></div>
+              <div class="regform-input">
+                <select class="input-style">
+                  <option>Select</option>
+                  <option>USD</option>
+                  <option>BTC</option>
+                </select>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Soft Cap</p></div>
+              <div class="regform-input"><input type="text" class="input-style" placeholder="Eg. Team, Reserves..."></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Hard Cap</p></div>
+              <div class="regform-input"><input type="text" class="input-style" placeholder="Eg. Team, Reserves..."></div>
+              <div style="clear: both;"></div>
+            </div>
+            <br><br>
+            <p class="bold sec-title">PRE-SALE</p>
+            <br><br>
+            <div class="regform-row">
+              <div class="regform-title"><p>Starts</p></div>
+              <div class="regform-input"><input name="pre_sale" type="text" id="datepicker" class="input-style small-input calendar" placeholder="dd/mm/yy" value=""></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Ends</p></div>
+              <div class="regform-input"><input name="pre_sale" type="text" id="datepicker2" class="input-style small-input calendar" placeholder="dd/mm/yy" value=""></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Bonus %</p></div>
+              <div class="regform-input"><input type="text" class="input-style percentage-input"> &nbsp;&nbsp;&nbsp;%</div>
+              <div style="clear: both;"></div>
+            </div>
+            <br><br>
+            <p class="bold sec-title">PUBLIC SALE</p>
+            <br><br>
+            <div class="regform-row">
+              <div class="regform-title"><p>Starts</p></div>
+              <div class="regform-input"><input name="pre_sale" type="text" id="datepicke3" class="input-style small-input calendar" placeholder="dd/mm/yy" value=""></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Ends</p></div>
+              <div class="regform-input"><input name="pre_sale" type="text" id="datepicker4" class="input-style small-input calendar" placeholder="dd/mm/yy" value=""></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"></div>
+              <div class="regform-input"><input type="text" class="input-style percentage-input"> &nbsp;&nbsp;&nbsp;%</div>
+              <div style="clear: both;"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 v-pad">
+              <button type="button" style="width:100%;" id="prevBtn" onclick="nextPrev(-1)" class="btn black-btn">Previous : Token Sale Details</button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 v-pad">
+              <button type="button" style="width:100%;" id="nextBtn" class="btn" onclick="nextPrev(1)">Next : About the Team</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------------ 3rd tab end ------------>
+      <!------------ 4th tab start ------------>
+      <div class="tab">
+        <div class="tab-content">
+          <div class="tab-section">
+            <p class="bold sec-title">TEAM MEMBER</p>
+            <br><br>
+            <div class="regform-row">
+              <div class="regform-title"><p>Name</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Title</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>www.linkedin.com/in/</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Photo</p></div>
+              <div class="regform-input">
+                <div id="hide">
+                  <label class="btn small-btn">
+                    <input type="file"/>Upload &nbsp;<i class="fa fa-plus" aria-hidden="true"></i>
+                  </label>
+                </div> 
+                <p class="small-font italic lightgrey-text">.JPG / .PNG, Recommended size: 250x250px (Square)</p>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+            <br>
+            <div class="regform-row">
+              <div class="regform-title"><p>Name</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Title</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>www.linkedin.com/in/</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Photo</p></div>
+              <div class="regform-input">
+                <div id="hide">
+                  <label class="btn small-btn">
+                    <input type="file"/>Upload &nbsp;<i class="fa fa-plus" aria-hidden="true"></i>
+                  </label>
+                </div> 
+                <p class="small-font italic lightgrey-text">.JPG / .PNG, Recommended size: 250x250px (Square)</p>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+            <br><br>
+            <p class="bold sec-title">CONTACT</p>
+            <br><br>
+            <div class="regform-row">
+              <div class="regform-title"><p>General Email</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Contact Person</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Contact Number</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Skype ID</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Telegram Username</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Company Address</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Company Name</p></div>
+              <div class="regform-input"><input type="text" class="input-style"></div>
+              <div style="clear: both;"></div>
+            </div>
+            <div class="regform-row">
+              <div class="regform-title"><p>Country</p></div>
+              <div class="regform-input">
+                <select class="input-style">
+                    <option value="AF">Select</option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AX">Åland Islands</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="AD">Andorra</option>
+                    <option value="AO">Angola</option>
+                    <option value="AI">Anguilla</option>
+                    <option value="AQ">Antarctica</option>
+                    <option value="AG">Antigua and Barbuda</option>
+                    <option value="AR">Argentina</option>
+                    <option value="AM">Armenia</option>
+                    <option value="AW">Aruba</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaijan</option>
+                    <option value="BS">Bahamas</option>
+                    <option value="BH">Bahrain</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="BB">Barbados</option>
+                    <option value="BY">Belarus</option>
+                    <option value="BE">Belgium</option>
+                    <option value="BZ">Belize</option>
+                    <option value="BJ">Benin</option>
+                    <option value="BM">Bermuda</option>
+                    <option value="BT">Bhutan</option>
+                    <option value="BO">Bolivia, Plurinational State of</option>
+                    <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                    <option value="BA">Bosnia and Herzegovina</option>
+                    <option value="BW">Botswana</option>
+                    <option value="BV">Bouvet Island</option>
+                    <option value="BR">Brazil</option>
+                    <option value="IO">British Indian Ocean Territory</option>
+                    <option value="BN">Brunei Darussalam</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="BF">Burkina Faso</option>
+                    <option value="BI">Burundi</option>
+                    <option value="KH">Cambodia</option>
+                    <option value="CM">Cameroon</option>
+                    <option value="CA">Canada</option>
+                    <option value="CV">Cape Verde</option>
+                    <option value="KY">Cayman Islands</option>
+                    <option value="CF">Central African Republic</option>
+                    <option value="TD">Chad</option>
+                    <option value="CL">Chile</option>
+                    <option value="CN">China</option>
+                    <option value="CX">Christmas Island</option>
+                    <option value="CC">Cocos (Keeling) Islands</option>
+                    <option value="CO">Colombia</option>
+                    <option value="KM">Comoros</option>
+                    <option value="CG">Congo</option>
+                    <option value="CD">Congo, the Democratic Republic of the</option>
+                    <option value="CK">Cook Islands</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CI">Côte d'Ivoire</option>
+                    <option value="HR">Croatia</option>
+                    <option value="CU">Cuba</option>
+                    <option value="CW">Curaçao</option>
+                    <option value="CY">Cyprus</option>
+                    <option value="CZ">Czech Republic</option>
+                    <option value="DK">Denmark</option>
+                    <option value="DJ">Djibouti</option>
+                    <option value="DM">Dominica</option>
+                    <option value="DO">Dominican Republic</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="EG">Egypt</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="GQ">Equatorial Guinea</option>
+                    <option value="ER">Eritrea</option>
+                    <option value="EE">Estonia</option>
+                    <option value="ET">Ethiopia</option>
+                    <option value="FK">Falkland Islands (Malvinas)</option>
+                    <option value="FO">Faroe Islands</option>
+                    <option value="FJ">Fiji</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+                    <option value="GF">French Guiana</option>
+                    <option value="PF">French Polynesia</option>
+                    <option value="TF">French Southern Territories</option>
+                    <option value="GA">Gabon</option>
+                    <option value="GM">Gambia</option>
+                    <option value="GE">Georgia</option>
+                    <option value="DE">Germany</option>
+                    <option value="GH">Ghana</option>
+                    <option value="GI">Gibraltar</option>
+                    <option value="GR">Greece</option>
+                    <option value="GL">Greenland</option>
+                    <option value="GD">Grenada</option>
+                    <option value="GP">Guadeloupe</option>
+                    <option value="GU">Guam</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="GG">Guernsey</option>
+                    <option value="GN">Guinea</option>
+                    <option value="GW">Guinea-Bissau</option>
+                    <option value="GY">Guyana</option>
+                    <option value="HT">Haiti</option>
+                    <option value="HM">Heard Island and McDonald Islands</option>
+                    <option value="VA">Holy See (Vatican City State)</option>
+                    <option value="HN">Honduras</option>
+                    <option value="HK">Hong Kong</option>
+                    <option value="HU">Hungary</option>
+                    <option value="IS">Iceland</option>
+                    <option value="IN">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IR">Iran, Islamic Republic of</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="IE">Ireland</option>
+                    <option value="IM">Isle of Man</option>
+                    <option value="IL">Israel</option>
+                    <option value="IT">Italy</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="JP">Japan</option>
+                    <option value="JE">Jersey</option>
+                    <option value="JO">Jordan</option>
+                    <option value="KZ">Kazakhstan</option>
+                    <option value="KE">Kenya</option>
+                    <option value="KI">Kiribati</option>
+                    <option value="KP">Korea, Democratic People's Republic of</option>
+                    <option value="KR">Korea, Republic of</option>
+                    <option value="KW">Kuwait</option>
+                    <option value="KG">Kyrgyzstan</option>
+                    <option value="LA">Lao People's Democratic Republic</option>
+                    <option value="LV">Latvia</option>
+                    <option value="LB">Lebanon</option>
+                    <option value="LS">Lesotho</option>
+                    <option value="LR">Liberia</option>
+                    <option value="LY">Libya</option>
+                    <option value="LI">Liechtenstein</option>
+                    <option value="LT">Lithuania</option>
+                    <option value="LU">Luxembourg</option>
+                    <option value="MO">Macao</option>
+                    <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                    <option value="MG">Madagascar</option>
+                    <option value="MW">Malawi</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="MV">Maldives</option>
+                    <option value="ML">Mali</option>
+                    <option value="MT">Malta</option>
+                    <option value="MH">Marshall Islands</option>
+                    <option value="MQ">Martinique</option>
+                    <option value="MR">Mauritania</option>
+                    <option value="MU">Mauritius</option>
+                    <option value="YT">Mayotte</option>
+                    <option value="MX">Mexico</option>
+                    <option value="FM">Micronesia, Federated States of</option>
+                    <option value="MD">Moldova, Republic of</option>
+                    <option value="MC">Monaco</option>
+                    <option value="MN">Mongolia</option>
+                    <option value="ME">Montenegro</option>
+                    <option value="MS">Montserrat</option>
+                    <option value="MA">Morocco</option>
+                    <option value="MZ">Mozambique</option>
+                    <option value="MM">Myanmar</option>
+                    <option value="NA">Namibia</option>
+                    <option value="NR">Nauru</option>
+                    <option value="NP">Nepal</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="NC">New Caledonia</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="NE">Niger</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="NU">Niue</option>
+                    <option value="NF">Norfolk Island</option>
+                    <option value="MP">Northern Mariana Islands</option>
+                    <option value="NO">Norway</option>
+                    <option value="OM">Oman</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PW">Palau</option>
+                    <option value="PS">Palestinian Territory, Occupied</option>
+                    <option value="PA">Panama</option>
+                    <option value="PG">Papua New Guinea</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Peru</option>
+                    <option value="PH">Philippines</option>
+                    <option value="PN">Pitcairn</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="QA">Qatar</option>
+                    <option value="RE">Réunion</option>
+                    <option value="RO">Romania</option>
+                    <option value="RU">Russian Federation</option>
+                    <option value="RW">Rwanda</option>
+                    <option value="BL">Saint Barthélemy</option>
+                    <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                    <option value="KN">Saint Kitts and Nevis</option>
+                    <option value="LC">Saint Lucia</option>
+                    <option value="MF">Saint Martin (French part)</option>
+                    <option value="PM">Saint Pierre and Miquelon</option>
+                    <option value="VC">Saint Vincent and the Grenadines</option>
+                    <option value="WS">Samoa</option>
+                    <option value="SM">San Marino</option>
+                    <option value="ST">Sao Tome and Principe</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="SN">Senegal</option>
+                    <option value="RS">Serbia</option>
+                    <option value="SC">Seychelles</option>
+                    <option value="SL">Sierra Leone</option>
+                    <option value="SG">Singapore</option>
+                    <option value="SX">Sint Maarten (Dutch part)</option>
+                    <option value="SK">Slovakia</option>
+                    <option value="SI">Slovenia</option>
+                    <option value="SB">Solomon Islands</option>
+                    <option value="SO">Somalia</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="GS">South Georgia and the South Sandwich Islands</option>
+                    <option value="SS">South Sudan</option>
+                    <option value="ES">Spain</option>
+                    <option value="LK">Sri Lanka</option>
+                    <option value="SD">Sudan</option>
+                    <option value="SR">Suriname</option>
+                    <option value="SJ">Svalbard and Jan Mayen</option>
+                    <option value="SZ">Swaziland</option>
+                    <option value="SE">Sweden</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="SY">Syrian Arab Republic</option>
+                    <option value="TW">Taiwan, Province of China</option>
+                    <option value="TJ">Tajikistan</option>
+                    <option value="TZ">Tanzania, United Republic of</option>
+                    <option value="TH">Thailand</option>
+                    <option value="TL">Timor-Leste</option>
+                    <option value="TG">Togo</option>
+                    <option value="TK">Tokelau</option>
+                    <option value="TO">Tonga</option>
+                    <option value="TT">Trinidad and Tobago</option>
+                    <option value="TN">Tunisia</option>
+                    <option value="TR">Turkey</option>
+                    <option value="TM">Turkmenistan</option>
+                    <option value="TC">Turks and Caicos Islands</option>
+                    <option value="TV">Tuvalu</option>
+                    <option value="UG">Uganda</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="US">United States</option>
+                    <option value="UM">United States Minor Outlying Islands</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="UZ">Uzbekistan</option>
+                    <option value="VU">Vanuatu</option>
+                    <option value="VE">Venezuela, Bolivarian Republic of</option>
+                    <option value="VN">Viet Nam</option>
+                    <option value="VG">Virgin Islands, British</option>
+                    <option value="VI">Virgin Islands, U.S.</option>
+                    <option value="WF">Wallis and Futuna</option>
+                    <option value="EH">Western Sahara</option>
+                    <option value="YE">Yemen</option>
+                    <option value="ZM">Zambia</option>
+                    <option value="ZW">Zimbabwe</option>
+                </select>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 v-pad">
+              <button type="button" style="width:100%;" class="btn black-btn">Save Draft</button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 v-pad">
+              <button type="button" style="width:100%;" class="btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------------ 4th tab end ------------>
+    </div>
+    <!------------ Register form end ------------>
+  </div>
+</section>
+<!------------ Start a Project end ------------>
+
+
+<!------------ Footer start ------------>
+<footer>
+  <div class="container">
+    <ul class="footer-menu">
+      <li><a href="about.html">About us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="privacy-policy.html">Privacy Polic</a>y</li>
+      <li><a href="terms.html">Terms of use</a></li>
+    </ul>
+    <div class="copyright">Concordia © 2019. All Rights Reserved.</div>
+    <div style="clear:both"></div>
+  </div>
+</footer>
+<!------------ Footer end ------------>
+
+<!------------ Login & signup popup ------------>
+<div id="login" class="white-popup mfp-hide sans">
+    <h3 class="bold">Login</h3>
+    <br><br>
+    <a href="" class="btn facebook-btn small-btn"><i class="fab fa-facebook-f"></i> &nbsp;&nbsp;Log in with Facebook</a>
+    <br><br>
+    <a href="" class="btn google-btn small-btn"><i class="fab fa-google"></i> &nbsp;&nbsp;Log in with Google</a>
+    <br><br><br>
+    <p class="small-font">Or sign in with email</p>
+    <br><br>
+    <input type="text" class="input-style" placeholder="john.doe@email.com ">
+    <br><br>
+    <input type="text" class="input-style" placeholder="Password ">
+    <br><br>
+    <div style="float:left;"><input type="checkbox"> &nbsp;&nbsp;<span class="small-font">Remember me</span></div>
+    <div style="float: right; margin-top: 2px;"><a href=""><span class="small-font" style="color:#24abd8;">Forgot your password?</span></a></div>
+    <div style="clear: both;"></div>
+    <br><br>
+    <a href="my-account.html" class="btn small-btn">Log In</a>
+    <br><br>
+    <p class="small-font">Don’t have an account? <a href="#signup" style="color:#24abd8;" class="second-popup-link">Sign up</a></p>
+  </div>
+  
+  <div id="signup" class="white-popup mfp-hide sans">		
+    <h3 class="bold">Sign Up</h3>
+    <br><br>
+    <a href="" class="btn facebook-btn small-btn"><i class="fab fa-facebook-f"></i> &nbsp;&nbsp;Log in with Facebook</a>
+    <br><br>
+    <a href="" class="btn google-btn small-btn"><i class="fab fa-google"></i> &nbsp;&nbsp;Log in with Google</a>
+    <br><br><br>
+    <p>Or sign up with email</p>
+    <br><br>
+    <input type="text" class="input-style" placeholder="Name ">
+    <br><br>
+    <input type="text" class="input-style" placeholder="Your Email ">
+    <br><br>
+    <input type="text" class="input-style" placeholder="Password ">
+    <br><br>
+    <table>
+      <tbody>
+        <tr valign="top">
+          <td style="width:25px;"><input type="checkbox" value="value1" oninput="this.className = ''"></td>
+          <td><p class="small-font" style="text-align: left;">I would like to receive latest news & updates</p></td>
+        </tr>
+        <tr valign="top">
+          <td style="width:25px;"><input type="checkbox" value="value2" oninput="this.className = ''"></td>
+          <td><p class="small-font" style="text-align: left;">I have read and agree with the <a href="terms.html" target="_blank" style="color:#24abd8">Terms & Conditions</a> and <a href="privacy.html" target="_blank" style="color:#24abd8">Privacy Policy</a></p></td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+    <a href="my-account.html" class="btn small-btn">Sign Up</a>
+    <br><br>
+    <p class="small-font">Already have an account? <a href="#login" style="color:#24abd8;" class="first-popup-link">Sign in</a></p>
+  </div>
+  <!------------ Login & signup end ------------>
+
+<script>
+function addMedia() {
+    var div = document.createElement('div');
+
+    div.innerHTML =
+        '<button value="-" class="remove-btn" onclick="removeMedia(this)"><p class="small-font"><i class="fas fa-times"></i> &nbsp;REMOVE</p></button>\
+	  <br><br><br>\
+	  <div class="regform-row">\
+      <div class="regform-title"><p>Video Title</p></div>\
+      <div class="regform-input"><input type="text" class="input-style"></div>\
+      <div style="clear: both;"></div>\
+	  </div>\
+	  <div class="regform-row">\
+      <div class="regform-title"><p>Link to Video</p></div>\
+      <div class="regform-input"><input type="text" class="input-style"></div>\
+      <div style="clear: both;"></div>\
+	  </div>';
+
+    document.getElementById('media').appendChild(div);
+}
+
+function removeMedia(input) {
+    document.getElementById('media').removeChild(input.parentNode);
+}	
+
+
+function addPress() {
+    var div = document.createElement('div');
+
+    div.innerHTML =
+        '<button value="-" class="remove-btn" onclick="removePress(this)"><p class="small-font"><i class="fas fa-times"></i> &nbsp;REMOVE</p></button>\
+	  <br><br><br>\
+	  <div class="regform-row">\
+      <div class="regform-title"><p>Link to Article</p></div>\
+      <div class="regform-input"><input type="text" class="input-style"></div>\
+      <div style="clear: both;"></div>\
+	  </div>';
+
+    document.getElementById('press').appendChild(div);
+}
+
+function removePress(input) {
+    document.getElementById('press').removeChild(input.parentNode);
+}	
+
+
+function addRoadmap() {
+    var div = document.createElement('div');
+
+    div.innerHTML =
+        '<button value="-" class="remove-btn" onclick="removeRoadmap(this)"><p class="small-font"><i class="fas fa-times"></i> &nbsp;REMOVE</p></button>\
+	  <br><br><br>\
+	  <div class="regform-row">\
+      <div class="regform-title"><p>Date</p></div>\
+      <div class="regform-input"><input type="text" class="input-style"></div>\
+      <div style="clear: both;"></div>\
+    </div>\
+    <div class="regform-row">\
+      <div class="regform-title"><p>Milestone</p></div>\
+      <div class="regform-input"><textarea style="height:70px;" class="input-style"></textarea></div>\
+      <div style="clear: both;"></div>\
+    </div>\
+    <br>\
+    <div class="regform-row">\
+      <div class="regform-title"><p>Date</p></div>\
+      <div class="regform-input"><input type="text" class="input-style"></div>\
+      <div style="clear: both;"></div>\
+    </div>\
+    <div class="regform-row">\
+      <div class="regform-title"><p>Milestone</p></div>\
+      <div class="regform-input"><textarea style="height:70px;" class="input-style"></textarea></div>\
+      <div style="clear: both;"></div>\
+    </div>\
+    <br>\
+    <div class="regform-row">\
+      <div class="regform-title"><p>Date</p></div>\
+      <div class="regform-input"><input type="text" class="input-style"></div>\
+      <div style="clear: both;"></div>\
+    </div>\
+    <div class="regform-row">\
+      <div class="regform-title"><p>Milestone</p></div>\
+      <div class="regform-input"><textarea style="height:70px;" class="input-style"></textarea></div>\
+      <div style="clear: both;"></div>\
+	  </div>';
+
+    document.getElementById('roadmap').appendChild(div);
+}
+
+function removeRoadmap(input) {
+    document.getElementById('roadmap').removeChild(input.parentNode);
+}	
+
+function addAllocation() {
+    var div = document.createElement('div');
+
+    div.innerHTML =
+        '<button value="-" class="remove-btn" onclick="removeAllocation(this)"><p class="small-font"><i class="fas fa-times"></i> &nbsp;REMOVE</p></button>\
+	  <br><br><br>\
+	  <div class="regform-row">\
+      <div class="regform-title"><p>Allocated to</p></div>\
+      <div class="regform-input"><input type="text" class="input-style" placeholder="Eg. Team, Reserves..."></div>\
+      <div style="clear: both;"></div>\
+	  </div>\
+    <div class="regform-row">\
+      <div class="regform-title"><p>% allocated</p></div>\
+      <div class="regform-input"><input type="text" class="input-style percentage-input"> &nbsp;&nbsp;&nbsp;%</div>\
+      <div style="clear: both;"></div>\
+	  </div>';
+
+    document.getElementById('allocation').appendChild(div);
+}
+
+function removeAllocation(input) {
+    document.getElementById('allocation').removeChild(input.parentNode);
+}	
+
+function addFunds() {
+    var div = document.createElement('div');
+
+    div.innerHTML =
+        '<button value="-" class="remove-btn" onclick="removeFunds(this)"><p class="small-font"><i class="fas fa-times"></i> &nbsp;REMOVE</p></button>\
+	  <br><br><br>\
+	  <div class="regform-row">\
+      <div class="regform-title"><p>Purpose</p></div>\
+      <div class="regform-input"><input type="text" class="input-style" placeholder="Eg. Team, Reserves..."></div>\
+      <div style="clear: both;"></div>\
+	  </div>\
+    <div class="regform-row">\
+      <div class="regform-title"><p>% of funds</p></div>\
+      <div class="regform-input"><input type="text" class="input-style percentage-input"> &nbsp;&nbsp;&nbsp;%</div>\
+      <div style="clear: both;"></div>\
+	  </div>';
+
+    document.getElementById('funds').appendChild(div);
+}
+
+function removeFunds(input) {
+    document.getElementById('funds').removeChild(input.parentNode);
+}	
+
+</script>
+
+
+<!-- Add wordcount--> 
+<script>
+  var wordLen = 14,
+  len; // Maximum word length
+$('#comment_body').keydown(function(event) {	
+len = $('#comment_body').val().split(/[\s]+/);
+if (len.length > wordLen) { 
+  if ( event.keyCode == 46 || event.keyCode == 8 ) {// Allow backspace and delete buttons
+  } else if (event.keyCode < 48 || event.keyCode > 57 ) {//all other buttons
+    event.preventDefault();
+  }
+}
+console.log(len.length + " words are typed out of an available " + wordLen);
+wordsLeft = (wordLen) - len.length;
+$('.words-left').html(wordsLeft+ ' words left');
+if(wordsLeft == 0) {
+  $('.words-left').css({
+    'color':'red'
+  }).prepend('<i class="fa fa-exclamation-triangle"></i>');
+}
+});
+
+var wordLen2 = 150,
+  len; // Maximum word length
+$('#comment_body2').keydown(function(event) {	
+len = $('#comment_body2').val().split(/[\s]+/);
+if (len.length > wordLen2) { 
+  if ( event.keyCode == 46 || event.keyCode == 8 ) {// Allow backspace and delete buttons
+  } else if (event.keyCode < 48 || event.keyCode > 57 ) {//all other buttons
+    event.preventDefault();
+  }
+}
+console.log(len.length + " words are typed out of an available " + wordLen2);
+wordsLeft = (wordLen2) - len.length;
+$('.words-left2').html(wordsLeft+ ' words left');
+if(wordsLeft == 0) {
+  $('.words-left2').css({
+    'color':'red'
+  }).prepend('<i class="fa fa-exclamation-triangle"></i>');
+}
+});
+</script>
+
+<!-- Datepicker --> 
+<script>
+  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+
+  $(document).ready(function() {
+    $("#datepicker2").datepicker();
+  });
+  </script>
+
+<!-- Apply class change on window scroll --> 
+<script>
+$(window).scroll(function() {
+  var addRemClass = $(window).scrollTop() > 0 ? 'addClass' : 'removeClass';
+    $("header")[addRemClass]('bgChange');
+});
+</script>    
+
+<!-- Add step --> 
+<script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the crurrent tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next : Token Details";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+</script>
+
+<!-- Add magnifique popup --> 
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- Add magnifique popup --> 
+		
+<script>
+    $(document).ready(function () {				
+      $('.open-popup-link').magnificPopup({
+        type:'inline',
+        midClick: true,
+        mainClass: 'mfp-fade' // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+        
+      });
+      
+      
+      // Show loading animation				
+      $('.submit-btn').each(function() {
+        $(this).on('click', function(e) {
+          e.preventDefault();
+          
+          var loadingDiv = $('.loading');
+          loadingDiv.show();
+          
+          setTimeout(function() { 
+            loadingDiv.hide();
+          }, 5000);
+          
+        });
+      });	
+    });
+  </script>
+  
+  <script>
+    $('.first-popup-link, .second-popup-link').magnificPopup({
+      closeBtnInside:true
+    });	
+  </script>
+
+<!-- Animate element -->
+<script src="js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+
+<script>
+(function(d){d.each(["backgroundColor","borderBottomColor","borderLeftColor","borderRightColor","borderTopColor","color","outlineColor"],function(f,e){d.fx.step[e]=function(g){if(!g.colorInit){g.start=c(g.elem,e);g.end=b(g.end);g.colorInit=true}g.elem.style[e]="rgb("+[Math.max(Math.min(parseInt((g.pos*(g.end[0]-g.start[0]))+g.start[0]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[1]-g.start[1]))+g.start[1]),255),0),Math.max(Math.min(parseInt((g.pos*(g.end[2]-g.start[2]))+g.start[2]),255),0)].join(",")+")"}});function b(f){var e;if(f&&f.constructor==Array&&f.length==3){return f}if(e=/rgb\(\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*,\s*([0-9]{1,3})\s*\)/.exec(f)){return[parseInt(e[1]),parseInt(e[2]),parseInt(e[3])]}if(e=/rgb\(\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*,\s*([0-9]+(?:\.[0-9]+)?)\%\s*\)/.exec(f)){return[parseFloat(e[1])*2.55,parseFloat(e[2])*2.55,parseFloat(e[3])*2.55]}if(e=/#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/.exec(f)){return[parseInt(e[1],16),parseInt(e[2],16),parseInt(e[3],16)]}if(e=/#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/.exec(f)){return[parseInt(e[1]+e[1],16),parseInt(e[2]+e[2],16),parseInt(e[3]+e[3],16)]}if(e=/rgba\(0, 0, 0, 0\)/.exec(f)){return a.transparent}return a[d.trim(f).toLowerCase()]}function c(g,e){var f;do{f=d.css(g,e);if(f!=""&&f!="transparent"||d.nodeName(g,"body")){break}e="backgroundColor"}while(g=g.parentNode);return b(f)}var a={aqua:[0,255,255],azure:[240,255,255],beige:[245,245,220],black:[0,0,0],blue:[0,0,255],brown:[165,42,42],cyan:[0,255,255],darkblue:[0,0,139],darkcyan:[0,139,139],darkgrey:[169,169,169],darkgreen:[0,100,0],darkkhaki:[189,183,107],darkmagenta:[139,0,139],darkolivegreen:[85,107,47],darkorange:[255,140,0],darkorchid:[153,50,204],darkred:[139,0,0],darksalmon:[233,150,122],darkviolet:[148,0,211],fuchsia:[255,0,255],gold:[255,215,0],green:[0,128,0],indigo:[75,0,130],khaki:[240,230,140],lightblue:[173,216,230],lightcyan:[224,255,255],lightgreen:[144,238,144],lightgrey:[211,211,211],lightpink:[255,182,193],lightyellow:[255,255,224],lime:[0,255,0],magenta:[255,0,255],maroon:[128,0,0],navy:[0,0,128],olive:[128,128,0],orange:[255,165,0],pink:[255,192,203],purple:[128,0,128],violet:[128,0,128],red:[255,0,0],silver:[192,192,192],white:[255,255,255],yellow:[255,255,0],transparent:[255,255,255]}})(jQuery);
+</script>
+
+</body>
+</html>
