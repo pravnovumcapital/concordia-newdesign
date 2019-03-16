@@ -16,6 +16,10 @@ ul.dlinks li {
 	width: 210px;
 }
 
+.calendar {
+	background-position: center right -12px !important;
+}
+
 }
 
 @media (max-width: 1200px) {
@@ -50,6 +54,10 @@ ul.dlinks li {
 .step-title-2 {margin-left: 95px;}
 .step-title-3 {margin-left: 100px;}
 .step-title-4 {margin-left: 85px;}
+
+.calendar {
+	background-position: center right -5px !important;
+}
 
 }
 
@@ -218,6 +226,7 @@ ul.footer-menu li {
 	width: 90px;
 }
 
+.linkedin-url {font-size: 10px;}
 
 }
 

@@ -397,7 +397,7 @@ Explore
 	width: 235px;
 	position: relative;
 	z-index: 1;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .explore-content {
